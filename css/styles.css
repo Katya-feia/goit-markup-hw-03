@@ -1,5 +1,6 @@
 *{
     margin: 0; padding: 0;
+    box-sizing: border-box;
 }
 :root{
     --gray-dark:#2F303A;
@@ -9,13 +10,38 @@
     --nt-color:#757575;
     --blue:#2196F3;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+ 
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--mt-color);
 }
 
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 .header {
     background-color: #FFFFFF;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -30,16 +56,7 @@ color: var(--blue);
     color: #000000;
 
 }
-.header-nav,
-.header-contact,
-.sec-do-list,
-.sec-benefits-list,
-.sec-team-list,
-.footer-list,
-.sec-filter-list,
-.sec-projects-list {
-    list-style: none;
-}
+
 .header-nav-link,
 .header-contact-link {
 font-weight: 500;
@@ -57,8 +74,14 @@ color: #212121;
 .header-contact-link:active{
     color:var(--blue);
 }
-.sec-one {
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.one {
     background-color: var(--gray-dark);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .sec-one-tit {
     font-weight: 900;
@@ -68,6 +91,7 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
+margin-bottom: 30px;
 }
 .sec-one-bt {
 background-color: var(--blue); 
@@ -82,9 +106,9 @@ color: #FFFFFF;
 border: none;
 cursor: pointer;
 }
-.sec-benefits,
-.sec-do,
-.sec-projects {
+.benefits,
+.do,
+.projects {
     background: var(--wight);
 }
 .sec-benefits-tit {
@@ -112,7 +136,7 @@ text-align: center;
 letter-spacing: 0.03em;
 }
 
-.sec-team {
+.team {
 background-color: var(--gray-light);
 }
 .sec-team-tit {
@@ -173,10 +197,9 @@ color: var(--nt-color);
     color: var(--blue);  
 }
 
-/*.sec-filter {
-}
 
-.sec-filter-list {
+
+/*.sec-filter-list {
 }*/
 .sec-filter-bt {
     font-weight: 500;
@@ -185,8 +208,8 @@ line-height: calc(26/16);
 text-align: center;
 letter-spacing: 0.03em;
 background-color: var(--gray-light);
-border: none;
 cursor: pointer;
+border: none;
 }
 .sec-filter-bt:hover,
 .sec-filter-bt:focus,
@@ -194,6 +217,7 @@ cursor: pointer;
     color: #FFFFFF;
     background-color: var(--blue);
     box-shadow:  0px 2px 2px 0px rgba(0, 0, 0, 0.12),  0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    border: none;
 }
 
 /*.sec-projects {
