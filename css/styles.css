@@ -39,12 +39,19 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    border: 0px solid blue;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
 }
 
 .header {
     background-color: var(--wight);
     padding-top: 32px;
     padding-bottom: 32px;
+    border-bottom: 1px solid #ECECEC;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -54,12 +61,21 @@ font-size: 26px;
 line-height: calc(31/26);
 letter-spacing: 0.03em;
 color: var(--blue);
+margin-right: 93px;
 }
 .l-header{
     color: #000000;
 
 }
-
+.header-nav{
+    display: flex;
+    gap: 50px;
+}
+.header-contact{
+    display: flex;
+    gap: 50px;
+    margin-left: 344px;
+}
 .header-nav-link,
 .header-contact-link {
 font-weight: 500;
@@ -209,8 +225,12 @@ color: var(--nt-color);
 
 
 
-/*.sec-filter-list {
-}*/
+.sec-filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+   }
 .sec-filter-bt {
     font-weight: 500;
 font-size: 16px;
@@ -231,10 +251,9 @@ border-radius: 4px;
     border: none;
 }
 
-.projects {
-    padding-bottom: 114px;
-}
+
 /*.sec-projects-list {
+    border: 1px solid #EEEEEE;
 }*/
 .sec-projects-nome {
     font-weight: 700;
