@@ -61,7 +61,6 @@ font-size: 26px;
 line-height: calc(31/26);
 letter-spacing: 0.03em;
 color: var(--blue);
-margin-right: 93px;
 }
 .l-header{
     color: #000000;
@@ -70,11 +69,12 @@ margin-right: 93px;
 .header-nav{
     display: flex;
     gap: 50px;
+    margin-left: 93px;
 }
 .header-contact{
     display: flex;
     gap: 50px;
-    margin-left: 344px;
+    margin-left: auto;
 }
 .header-nav-link,
 .header-contact-link {
@@ -82,9 +82,14 @@ font-weight: 500;
 font-size: 14px;
 line-height: calc(16/14);
 letter-spacing: 0.02em;
-text-decoration: none;
-color: #212121;
+text-decoration: none;}
+.header-nav-link{
+color: var(--mt-color);
 }
+.header-contact-link{
+    color: var(--nt-color);
+}
+
 .header-nav-link:hover,
 .header-nav-link:focus,
 .header-nav-link:active,
@@ -103,6 +108,8 @@ color: #212121;
     padding-bottom: 200px;
 }
 .sec-one-tit {
+    width: 696px;
+    margin: 0 auto;
     font-weight: 900;
 font-size: 44px;
 line-height: calc(60/44);
@@ -193,13 +200,16 @@ background-color: var(--gray-light);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
+.sec-team-cart{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .sec-team-nome {
 font-weight: 500;
 font-size: 16px;
 line-height: calc(19/16);
 text-align: center;
 letter-spacing: 0.03em;
-padding-top: 30px;
 padding-bottom: 10px;
 }
 .sec-team-text {
@@ -209,7 +219,6 @@ line-height: calc(19/16);
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--nt-color);
-padding-bottom: 30px;
 }
 
 .footer{
@@ -220,8 +229,7 @@ padding-bottom: 30px;
 .l-footer {
     color: #FFFFFF;
 }
-/*.footer-list {
-}*/
+
 .footer-adress,
 .footer-link {
     font-weight: 400;
@@ -233,11 +241,17 @@ padding-bottom: 30px;
 }
 .footer-adress{
     color: #FFFFFF;
+
 }
 .footer-link {
     color:  rgba(255, 255, 255, 0.6);
 }
-
+.footer-item {
+margin-top: 20px;
+}
+.footer-items{
+    margin-top: 9px;
+}
 .footer-adress:hover,
 .footer-adress:focus,
 .footer-adress:active,
